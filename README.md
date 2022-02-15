@@ -5,6 +5,7 @@
 
 - Fork this repo to your account.
 - Clone the repo to your local machine
+- Go to issues , select the challenge you want to solve
 - In the root folder/directory, create a directory/folder that is named after your Github username, e.g. devabubakar for my case.
 - Add a file in the created folder/directory above, with the following naming convention: <preferred file name>.<lang_file_ext> e.g. count_zeros.js (if doing with JavaScript), count_zeros.py (if Python), CountZeros.cs (C#) etc.
 - Write your code, test, stage, commit, push.
