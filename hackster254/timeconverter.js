@@ -1,7 +1,11 @@
 function myFunction(minutes) {
-    var seconds = minutes * 60
-        //console.log(seconds)
-    return seconds;
+    if (Number.isInteger(minutes)) {
+        var seconds = minutes * 60
+        console.log(seconds)
+        return seconds;
+    }
+    return 'Enter an integer'
+
 
 }
-myFunction(4)
+console.log(myFunction(4))
