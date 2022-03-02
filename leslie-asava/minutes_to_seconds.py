@@ -1,3 +1,11 @@
+"""
+
+Entry Challenge V3
+Write a function ( myFunction (){} ) that takes an integer minutes and converts it to seconds.
+
+"""
+
+
 # Convert minutes to seconds
 def minutes_to_seconds(minutes):
 
