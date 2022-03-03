@@ -1,0 +1,9 @@
+{
+  "name": "career-catalyst-challenge",
+  "version": "1.0.0",
+  "description": "function that converts minutes to seconds",
+  "main": "Leilasinore/minutes_to_seconds.js",
+  "repository": "https://github.com/Leilasinore/career-catalyst-challenge-1.git",
+  "author": "Leilasinore <leilasinore99@gmail.com>",
+  "license": "MIT"
+}
