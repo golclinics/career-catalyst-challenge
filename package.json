@@ -5,5 +5,12 @@
   "main": "Leilasinore/minutes_to_seconds.js",
   "repository": "https://github.com/Leilasinore/career-catalyst-challenge-1.git",
   "author": "Leilasinore <leilasinore99@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
