@@ -1,0 +1,16 @@
+{
+  "name": "career-catalyst-challenge",
+  "version": "1.0.0",
+  "main": "alexmurithi/type_of_value.js",
+  "repository": "https://github.com/alexmurithi/career-catalyst-challenge.git",
+  "author": "Alex Murithi <gitsaleks@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "start": "alexmurithi/type_of_value.js",
+    "test": "jest"
+  }
+}
