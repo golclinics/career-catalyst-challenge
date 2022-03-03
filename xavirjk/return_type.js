@@ -1,15 +1,16 @@
-function returnType(arg) {
+const assert = require('assert');
+const returnType = (arg) => {
   return typeof arg;
-}
-
-const test = (arg1, arg2, arg3) => {
-  let type = returnType(arg1);
-  if (type !== arg2)
-    console.log(`test ${arg3} failed expected ${arg2} but received ${arg1} `);
-  else console.log(`test ${arg3} passed`);
 };
-test('', typeof '', 1);
-test({}, typeof {}, 2);
-test(1, typeof 1, 3);
-
+const tests = () => {
+  try {
+    assert.strictEqual(returnType(1), typeof 0, `test failed`);
+    assert.strictEqual(returnType('string'), typeof 'string', `test failed`);
+    assert.strictEqual(returnType(['array']), typeof {}, `test failed`);
+    console.log('all tests passed');
+  } catch (err) {
+    console.error(err);
+  }
+};
+tests();
 module.exports = returnType;
