@@ -1,5 +1,6 @@
 import unittest
 from random import randint
+from unittest import result
 from convert_seconds import my_function
 
 class TestConvertSeconds(unittest.TestCase):
@@ -17,13 +18,19 @@ class TestConvertSeconds(unittest.TestCase):
         value = 'v'
         result = my_function(value)
         self.assertNotIsInstance(result,int)
-        self.assertEqual(result,"Value should be an int")
+        self.assertEqual(result,"Value should be a positive int")
     
     def test_wrong_ans(self):
         # testing the wrong result
         value = randint(0,60)
         result = my_function(value)
         self.assertIsNot(result,value*randint(0,59))
+    
+    def test_negative_time(self):
+        value = randint(-10,0)
+        result = my_function(value)
+        self.assertNotIsInstance(result,int)
+        self.assertEqual(result,"Value should be a positive int")
 
 if __name__ =="__main__":
     unittest.main()
