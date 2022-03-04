@@ -33,8 +33,8 @@ assert.throws(()=>{
 
 
 //Applying Boundary value analysis Testing
-
-const deltaValue=Number.EPSILON;
+//since they are int, the delta value must be 1.
+const deltaValue=1;
 
 //test to see that it throw when minutes are lower than lowerlimit.
 expectedError= "Minutes must be non-negative and must be less than or equal to " + upperLimit;
