@@ -24,14 +24,15 @@ function minutesToSecondsConverter(minutes){
 
 
 
-const expectedError= "Minutes value must be a whole number between  " + lowerLimit + " and " + upperLimit;
+const error = "Minutes value must be a whole number between  " + lowerLimit + " and " + upperLimit;
+const commonError= constructErrorObjectFromMessage(error);
 
 
 //should throw for non-numeric inputs
 const nonNumeric= '5';
 assert.throws(()=>{
     minutesToSecondsConverter(nonNumeric);
-},constructErrorObjectFromMessage(expectedError));
+},commonError);
 
 
 
@@ -40,7 +41,7 @@ assert.throws(()=>{
 const float= 0.001;
 assert.throws(()=>{
     minutesToSecondsConverter(float);
-},constructErrorObjectFromMessage(expectedError));
+},commonError);
 
 //Applying Boundary value analysis Testing
 //since they are int, the delta value must be 1.
@@ -49,7 +50,7 @@ const deltaValue=1;
 //test to see that it throw when minutes are lower than lowerlimit.
 assert.throws(()=>{
     minutesToSecondsConverter(lowerLimit-deltaValue);
-},constructErrorObjectFromMessage(expectedError));
+},commonError);
 
 
 
@@ -78,7 +79,7 @@ assert.equal(upperLimit*multiplier,minutesToSecondsConverter(upperLimit));
 //should throw when upper limit is exceeded.
 assert.throws(()=>{
     minutesToSecondsConverter(upperLimit + deltaValue);
-},constructErrorObjectFromMessage (expectedError));
+},commonError);
 
 
 
