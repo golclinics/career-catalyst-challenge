@@ -1,8 +1,9 @@
 //function that takes integer minutes as a parameter//
 function myFunction(minutes) {
-  let seconds = minutes * 60; // convert minutes into seconds
-
-  return seconds;
+  //only integer values are passed here//
+  if (Number.isInteger(minutes)) {
+    return minutes * 60;
+  }
 }
 
 module.exports = myFunction;
