@@ -1,0 +1,16 @@
+{
+  "name": "career-catalyst-challenge",
+  "version": "1.0.0",
+  "description": "function that takes two numbers as arguments and return their sum.",
+  "main": "ndurumo254/sum_of_two_numbers.js",
+  "repository": "https://github.com/ndurumo254/career-catalyst-challenge.git",
+  "author": "ndurumo254 <erickndurumo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
+  },
+  "scripts":{
+    "test":"jest"
+  }
+}
